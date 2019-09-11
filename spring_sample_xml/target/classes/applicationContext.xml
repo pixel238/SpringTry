@@ -7,7 +7,7 @@
 	class="com.tavisca.repository.HibernateCustomerRepositoryImpl"/>
  
  <bean name="customerService" 
- 	class="com.tavisca.service.CustomerServiceImpl" autowire="byName">
+ 	class="com.tavisca.service.CustomerServiceImpl" autowire="byName" scope="prototype">
  	<!-- <constructor-arg index="0" ref="customerRepository"/>-->
  </bean>
 </beans>
